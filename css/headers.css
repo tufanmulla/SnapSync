@@ -1,0 +1,151 @@
+/* ========================================================================= */
+/* Header CSS Starts Are Here */
+/* sshContainr CSS Starts Are Here */
+.sshContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.sshLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 2;
+}
+.sshLogo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sshLogo img {
+  padding: 10px 0;
+  width: 50px;
+}
+
+.sshSearch {
+  display: flex;
+  align-items: center;
+  grid-column: 2 / 8;
+}
+.sshSearch form {
+  width: 100%;
+}
+
+.sshSearch button {
+  width: 7%;
+  padding: 13px 0 13px 10px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  cursor: pointer;
+}
+.sshSearch button i {
+  font-size: 16px;
+  color: #818181;
+}
+.sshSearch input[type="search"] {
+  background-color: #efefef;
+  color: #818181;
+  width: 88%;
+  margin-left: -5px;
+  padding: 12px 15px 12px 3px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+.sshEaU {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 8 / 10;
+  position: relative;
+}
+.sshEaU:after {
+  content: "";
+  width: 1px;
+  height: 40px;
+  background-color: #b3b3b3;
+  position: absolute;
+  right: -27px;
+}
+.sshEaU ul {
+  display: flex;
+  gap: 20px;
+}
+.sshEaU ul li a {
+  font-size: 14px;
+  color: #818181;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.sshEaU ul li:hover a {
+  color: #000000;
+}
+#sshUnsplashPlus {
+  color: transparent;
+  background-image: linear-gradient(to right, #cf90f9 50%, #8ecbfc 50%);
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#sshUnsplashPlus:hover {
+  background-image: linear-gradient(to right, #8ecbfc 50%, #cf90f9 50%);
+}
+
+.sshUserActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-column: 10 / 12;
+  gap: 20px;
+}
+.sshUserActions .loginButton {
+  font-size: 14px;
+  font-weight: 500;
+  color: #818181;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sshUserActions .loginButton:hover {
+  color: #000000;
+}
+.sshUserActions button {
+  background-color: transparent;
+  padding: 5px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #797979;
+  border-radius: 5px;
+  border: 0.5px solid #818181;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sshUserActions button:hover {
+  color: #000000;
+}
+
+.sshMenuBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 12 / -1;
+}
+.sshMenuBar i {
+  padding: 15px 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #818181;
+  transition: all 0.3s;
+}
+.sshMenuBar i:hover {
+  color: #000000;
+}
+/* sshContainr CSS Ends Are Here
+/* Header CSS Ends Are Here */
+/* ========================================================================= */
