@@ -158,9 +158,26 @@
   background-color: #ffffff;
   box-shadow: 0 0 8px -6px #000000;
   border-radius: 7px;
-  transform-origin: right;
-  transition: opacity 0.3s ease; /* Adjust the duration and timing function as needed */
+  transform-origin: top right;
+  transform: scale(0);
+  transition: all 0.1s ease-in-out;
 }
+
+/*When Users Click On The #sshMenuBarButton Element Then Add .sshMenuToggle Class At .sshMenu Then Toggling The .sshMenu. Starts Are Here */
+.sshMenuToggle {
+  transform: scale(1);
+  animation-name: sshMennuToggleZoomAniamation;
+  animation-duration: 0.5s;
+}
+@keyframes sshMennuToggleZoomAniamation {
+  15% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* When Users Click On The #sshMenuBarButton Element Then Add .sshMenuToggle Class At .sshMenu Then Toggling The .sshMenu. Ends Are Here */
 
 .sshMenuContainer {
   padding: 30px 30px 0 30px;
