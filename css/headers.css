@@ -1,6 +1,3 @@
-/* ========================================================================= */
-/* Header CSS Starts Are Here */
-/* sshContainr CSS Starts Are Here */
 .sshContainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -18,7 +15,8 @@
 }
 .sshLogo img {
   padding: 10px 0;
-  width: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .sshSearch {
@@ -27,33 +25,37 @@
   grid-column: 2 / 8;
 }
 .sshSearch form {
-  width: 100%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  border-radius: 23px;
+  transition: all 0.4s;
+}
+.sshSearch form:hover {
+  box-shadow: 0 0 5px -2px #000000;
 }
 
 .sshSearch button {
-  width: 7%;
-  padding: 13px 0 13px 10px;
+  padding: 10px 0 10px 10px;
   border: none;
   outline: none;
-  border-top-left-radius: 23px;
-  border-bottom-left-radius: 23px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   cursor: pointer;
 }
-.sshSearch button i {
-  font-size: 16px;
-  color: #818181;
+.sshSearch button img {
+  width: 22px;
+  height: 22px;
 }
 .sshSearch input[type="search"] {
   background-color: #efefef;
   color: #818181;
-  width: 88%;
-  margin-left: -5px;
-  padding: 12px 15px 12px 3px;
+  padding: 10px 15px 10px 3px;
   font-size: 15px;
   border: none;
   outline: none;
-  border-top-right-radius: 23px;
-  border-bottom-right-radius: 23px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .sshEaU {
@@ -104,14 +106,14 @@
   grid-column: 10 / 12;
   gap: 20px;
 }
-.sshUserActions .loginButton {
+.sshUserActions .sshLoginButton {
   font-size: 14px;
   font-weight: 500;
   color: #818181;
   cursor: pointer;
   transition: all 0.3s;
 }
-.sshUserActions .loginButton:hover {
+.sshUserActions .sshLoginButton:hover {
   color: #000000;
 }
 .sshUserActions button {
@@ -119,7 +121,7 @@
   padding: 5px 5px;
   font-size: 14px;
   font-weight: 500;
-  color: #797979;
+  color: #818181;
   border-radius: 5px;
   border: 0.5px solid #818181;
   outline: none;
@@ -128,6 +130,7 @@
 }
 .sshUserActions button:hover {
   color: #000000;
+  border: 0.5px solid #000000;
 }
 
 .sshMenuBar {
@@ -136,16 +139,124 @@
   justify-content: center;
   grid-column: 12 / -1;
 }
-.sshMenuBar i {
-  padding: 15px 10px;
-  font-size: 22px;
+.sshMenuBar button {
+  padding: 10px 6px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  color: #818181;
-  transition: all 0.3s;
 }
-.sshMenuBar i:hover {
+.sshMenuBar button img {
+  width: 23px;
+  height: 23px;
+}
+
+/* Menu CSS Starts Are Here */
+.sshMenu {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px -6px #000000;
+  border-radius: 7px;
+  transform-origin: right;
+  transition: opacity 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+.sshMenuContainer {
+  padding: 30px 30px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+  position: relative;
+}
+.sshMenuContainer::before {
+  content: "";
+  position: absolute;
+  box-shadow: 8px -8px 6px -11px;
+  border-right: 30px solid #ffffff;
+  border-bottom: 30px solid transparent;
+  top: -3px;
+  right: 19px;
+  transform: rotate(315deg);
+}
+.sshMenu ul li a {
+  font-size: 14px;
+  color: #818181;
+  font-weight: 500;
+  transition: all 0.1s;
+}
+.sshMenu ul li:hover a {
   color: #000000;
 }
-/* sshContainr CSS Ends Are Here
-/* Header CSS Ends Are Here */
-/* ========================================================================= */
+
+.sshMenuBoxLogo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sshMenuBoxLogo strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.sshMenuBoxLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sshMenuBoxLinks ul {
+  align-self: center;
+}
+.sshMenuBoxLinks ul:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+}
+.socialLinks li a {
+  display: flex;
+  align-items: center;
+}
+.socialLinks li a img {
+  width: 28px;
+  height: 28px;
+}
+
+.sshBottomBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-top: 1px solid #81818142;
+  padding: 15px 35px;
+}
+.sshPages ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.sshLanguages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+.sshLanguages select {
+  background-color: transparent;
+  color: #818181;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.sshLanguages select option {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+/* Menu CSS Ends Are Here */
