@@ -88,15 +88,20 @@
   color: #000000;
 }
 #sshUnsplashPlus {
-  color: transparent;
-  background-image: linear-gradient(to right, #cf90f9 50%, #8ecbfc 50%);
-  background-position: center;
+  background: -webkit-linear-gradient(#cf90f9, #8ecbfc);
   background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 #sshUnsplashPlus:hover {
-  background-image: linear-gradient(to right, #8ecbfc 50%, #cf90f9 50%);
+  background: -webkit-linear-gradient(#8ecbfc, #cf90f9);
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .sshUserActions {
@@ -106,12 +111,15 @@
   grid-column: 10 / 12;
   gap: 20px;
 }
-.sshUserActions .sshLoginButton {
+.sshUserActions .sshLoginButton a {
   font-size: 14px;
   font-weight: 500;
   color: #818181;
   cursor: pointer;
   transition: all 0.3s;
+}
+.sshUserActions .sshLoginButton a:visited {
+  color: #818181;
 }
 .sshUserActions .sshLoginButton:hover {
   color: #000000;
@@ -271,6 +279,7 @@
   border: none;
   cursor: pointer;
 }
+
 .sshLanguages select option {
   font-size: 15px;
   font-weight: 500;

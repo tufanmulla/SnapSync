@@ -49,7 +49,7 @@
           </a>
         </div>
         <div class="sshSearch">
-          <form>
+          <form id="searchForm">
             <button title="Search Image" type="submit">
               <img
                 src="./images/headerPictures/searchPictures.png"
@@ -73,7 +73,9 @@
           </ul>
         </div>
         <div class="sshUserActions">
-          <div class="sshLoginButton">Log In</div>
+          <div class="sshLoginButton">
+            <a href="./html/login.html">Log In</a>
+          </div>
           <button>Submit a photo</button>
         </div>
         <div class="sshMenuBar">
@@ -307,8 +309,19 @@
     <!--Snap Sync Header Ends Are Here -->
     <!-- =================================================================================  -->
 
+    <!-- =================================================================================  -->
+    <!-- Main Starts Are Here -->
+    <main>
+      <div id="imageContainer"></div>
+    </main>
+    <!-- Main Ends Are Here -->
+    <!-- =================================================================================  -->
+
     <!-- Linked With JavsScript File Starts Are Here -->
     <script src="./js/headers.js"></script>
+
+    <!-- Fetch Image From Unsplash.com -->
+    <script src="./js/callUnsplashApi.js"></script>
     <!-- Linked With JavsScript File Ends Are Here -->
   </body>
 </html>

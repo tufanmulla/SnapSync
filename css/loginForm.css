@@ -1,0 +1,177 @@
+.container {
+  display: grid;
+  grid-template-columns: 500px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 25px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.logo img {
+  width: 100px;
+  height: 70px;
+  cursor: grab;
+}
+.logo strong {
+  font-size: 25px;
+}
+.logo span {
+    color: #818181;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.loginWithFB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: rgb(207, 144, 249);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf90f9",endColorstr="#8ecbfc",GradientType=1);
+  box-shadow: 0 0 12px -6px #cf90f9;
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.loginWithFB img {
+  width: 25px;
+  height: 25px;
+}
+.loginWithFB span {
+  font-size: 15px;
+  font-weight: 400;
+}
+.loginWithFB:hover {
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.or {
+  color: #818181;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.loginForm form div label {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #818181;
+  margin-bottom: 10px;
+}
+.loginForm form div input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  font-size: 15px;
+  color: #cf90f9;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -5px #cf90f9;
+}
+.loginForm form div input::placeholder {
+  font-size: 16px;
+  color: #cf90f9;
+}
+.loginForm form div input:focus {
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.loginForm .password {
+  position: relative;
+}
+
+.loginForm .password a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #8ecbfc;
+  text-decoration: underline;
+  font-size: 14px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.loginForm .password a:hover {
+  color: #369cf0;
+}
+
+.loginForm form button {
+  background: rgb(207, 144, 249);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf90f9",endColorstr="#8ecbfc",GradientType=1);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.loginForm form button:hover {
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.notAAccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8ecbfc;
+  padding: 30px 15px;
+}
+.notAAccount span {
+  font-size: 16px;
+  font-weight: 500px;
+  color: #cf90f9;
+}
+.notAAccount span a {
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: 500px;
+  color: #8ecbfc;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+.notAAccount span a:hover {
+  color: #369cf0;
+}
