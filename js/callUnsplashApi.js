@@ -1,4 +1,4 @@
-// const apiKey = "";
+const apiKey = "QS9d2PodO1ovl-TNkgj52sevLJQdyr7e5KBLO0EWEEw";
 let page = 1; // Track the page number for infinite scrolling
 
 // Function to fetch and display images
@@ -12,21 +12,16 @@ function fetchAndDisplayImages(searchTerm, page) {
       const imageUrls = data.map((photo) => photo.urls.regular);
 
       // Display the images on the webpage
-      const horizontalDiv = document.querySelector(".horizontal");
-      const verticalDiv = document.querySelector(".vertical");
-
+      const imageContainer = document.querySelector(".imageContainer");
       imageUrls.forEach((imageUrl) => {
-        const horizontalImg = document.createElement("img");
-        const verticalImg = document.createElement("img");
-        horizontalImg.src = imageUrl;
-        verticalImg.src = imageUrl;
-        horizontalImg.alt = "Snap Sync Horizontal Images";
-        verticalImg.alt = "Snap Sync Vertical Images";
-        horizontalDiv.appendChild(horizontalImg);
-        verticalDiv.appendChild(verticalImg);
+        const img = document.createElement("img");
+        img.classList.add("vertical");
+        img.src = imageUrl;
+        img.alt = "Snap Sync Vertical Images";
+        imageContainer.appendChild(img);
       });
     })
-    .catch((error) => console.error("Error fetching images:", error));
+    .catch((error) => console.error("Error fetching images:", error.response));
 }
 
 // Fetch and display images on page load

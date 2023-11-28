@@ -286,3 +286,21 @@
   background-color: #ffffff;
 }
 /* Menu CSS Ends Are Here */
+
+/* SSH Category Starts Are Here */
+.sshCategory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-gap: 25px;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+.sshCpartOne {
+  display: flex;
+  gap: 20px;
+}
+
+.sshCpartTwo {
+  display: flex;
+}
+/* SSH Category Ends Are Here */
