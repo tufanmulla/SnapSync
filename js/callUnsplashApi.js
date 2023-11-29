@@ -1,5 +1,7 @@
-const apiKey = "QS9d2PodO1ovl-TNkgj52sevLJQdyr7e5KBLO0EWEEw";
+require("dotenv").config();
+const apiKey = process.env.unsplashApiKey;
 let page = 1; // Track the page number for infinite scrolling
+// console.log(apiKey);
 
 // Function to fetch and display images
 function fetchAndDisplayImages(searchTerm, page) {
