@@ -1,7 +1,5 @@
-require("dotenv").config();
-const apiKey = process.env.unsplashApiKey;
+// const apiKey = "QS9d2PodO1ovl-TNkgj52sevLJQdyr7e5KBLO0EWEEw";
 let page = 1; // Track the page number for infinite scrolling
-// console.log(apiKey);
 
 // Function to fetch and display images
 function fetchAndDisplayImages(searchTerm, page) {
@@ -17,9 +15,8 @@ function fetchAndDisplayImages(searchTerm, page) {
       const imageContainer = document.querySelector(".imageContainer");
       imageUrls.forEach((imageUrl) => {
         const img = document.createElement("img");
-        img.classList.add("vertical");
         img.src = imageUrl;
-        img.alt = "Snap Sync Vertical Images";
+        img.alt = "Snap Sync Images";
         imageContainer.appendChild(img);
       });
     })
@@ -57,7 +54,7 @@ document
     const searchTerm = document.getElementById("search").value;
 
     // Clear previous images
-    document.getElementById("imageContainer").innerHTML = "";
+    document.querySelector(".imageContainer").innerHTML = "";
 
     // Reset the page number
     page = 1;
