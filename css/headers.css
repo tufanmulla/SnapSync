@@ -290,10 +290,9 @@
 /* SSH Category Starts Are Here */
 .sshCategory {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
-  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr auto);
+  grid-gap: 35px;
   padding: 10px 20px;
-  border: 2px solid;
 }
 .sshCpartOne {
   display: flex;
@@ -314,12 +313,12 @@
 .sshCpartTwo {
 display: flex;
 gap: 20px;
-align-items: center;
 justify-content: flex-start;
-overflow: hidden;
+align-items: center;
 }
 
 .sshCpartTwo div {
+  text-align: center;
   font-size: 14px;
   font-weight: 500;
   color: #818181;
