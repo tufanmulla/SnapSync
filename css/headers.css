@@ -298,9 +298,35 @@
 .sshCpartOne {
   display: flex;
   gap: 20px;
+      align-items: center;
+    justify-content: center;
+}
+.sshCpartOne div a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.sshCpartOne div a:hover {
+  color: #000000;
 }
 
 .sshCpartTwo {
-  display: flex;
+display: flex;
+gap: 20px;
+align-items: center;
+justify-content: flex-start;
+overflow: hidden;
+}
+
+.sshCpartTwo div {
+  font-size: 14px;
+  font-weight: 500;
+  color: #818181;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    cursor: pointer;
+}
+.sshCpartTwo div:hover {
+  color: #000000;
 }
 /* SSH Category Ends Are Here */
