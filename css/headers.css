@@ -169,6 +169,7 @@
   transform-origin: top right;
   transform: scale(0);
   transition: all 0.1s ease-in-out;
+  z-index: 10;
 }
 
 /*When Users Click On The #sshMenuBarButton Element Then Add .sshMenuToggle Class At .sshMenu Then Toggling The .sshMenu. Starts Are Here */
@@ -290,8 +291,7 @@
 /* SSH Category Starts Are Here */
 .sshCategory {
   display: grid;
-  grid-template-columns: repeat(2, 1fr auto);
-  grid-gap: 35px;
+  grid-template-columns: repeat(12, 1fr);
   padding: 10px 20px;
 }
 .sshCpartOne {
@@ -299,6 +299,7 @@
   gap: 20px;
       align-items: center;
     justify-content: center;
+    grid-column: 1/2;
 }
 .sshCpartOne div a {
   font-size: 14px;
@@ -310,22 +311,37 @@
   color: #000000;
 }
 
-.sshCpartTwo {
-display: flex;
-gap: 20px;
-justify-content: flex-start;
-align-items: center;
+.swiper {
+  width: 95%;
+  grid-column: 2/-1;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0);
+    color:#cf90f9;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,0);
+    color:#cf90f9;
 }
 
-.sshCpartTwo div {
-  text-align: center;
+.sshCpartTwo {
+  display: flex;
+  gap: 30px;
+}
+
+.sshCategory ul li {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   color: #818181;
     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
     cursor: pointer;
 }
-.sshCpartTwo div:hover {
+.sshCategory ul li:hover {
   color: #000000;
 }
 /* SSH Category Ends Are Here */
