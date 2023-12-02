@@ -1,7 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  loop:true,
-  slidesPerView: 9,
+  loop:false,
+  slidesPerView: 10,
+  slidesOffsetBefore: 20,
+  slidesOffsetAfter: 20,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

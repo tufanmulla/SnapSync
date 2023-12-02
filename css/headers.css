@@ -300,6 +300,7 @@
       align-items: center;
     justify-content: center;
     grid-column: 1/2;
+    margin-right:15px ;
 }
 .sshCpartOne div a {
   font-size: 14px;
@@ -312,7 +313,7 @@
 }
 
 .swiper {
-  width: 95%;
+  width: 100%;
   grid-column: 2/-1;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
