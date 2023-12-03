@@ -1,0 +1,221 @@
+.featuresContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: end;
+  margin-top: 40px;
+  grid-gap: 20px;
+}
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: 1 / 7;
+}
+.searchBox article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.searchBox article h1 {
+  font-size: 35px;
+  background: -webkit-linear-gradient(#cf90f9, #8ecbfc);
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.searchBox article h1:hover {
+  background: -webkit-linear-gradient(#8ecbfc, #cf90f9);
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.searchBox article p {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.trendingSearches {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending {
+  display: flex;
+  gap: 5px;
+}
+.trending li:first-child a {
+  color: #000000;
+  cursor: text;
+  font-weight: 500;
+}
+.trending li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.trending li:hover a {
+  color: #000000;
+}
+
+.supported {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #efefef;
+  color: #818181;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.supported span {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+}
+.supported img {
+  width: 80px;
+}
+.searchBox .sshSearch form {
+  width: 100%;
+}
+.searchBox .sshSearch form input {
+  padding: 10px px 15px 10px 3px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.searchBox .sshSearch button {
+  padding: 16px 0 16px 16px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.trendignSearchesBox {
+  height: 315px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+  grid-column: 7 / 10;
+  padding: 20px;
+  gap: 20px;
+}
+.trendignSearchesBox ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.trendignSearchesBox ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #efefef;
+  padding: 5px;
+  border-radius: 8px;
+  grid-column: span 2;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.trendignSearchesBox ul li:hover {
+  border: 1px solid #6e6e6e;
+}
+.trendignSearchesBox ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.trendignSearchesBox ul li:hover a {
+  color: #000000;
+}
+.trendignSearchesBox a {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trendignSearchesBox a:hover {
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.featureBox {
+  height: 315px;
+  grid-column: 10 / -1;
+  position: relative;
+}
+.featureBox img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  gap: 5px;
+  left: 20px;
+}
+.owner span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+}
+.owner a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+.owner a:hover {
+  text-decoration: underline;
+}
+
+.imageCredits {
+  display: flex;
+  place-content: center;
+  gap: 5px;
+  width: 100%;
+  color: #818181;
+  position: absolute;
+  font-size: 15px;
+  padding: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #efefef;
+  transition: all 0.5s;
+  font-weight: 300;
+}
+.imageCredits:hover {
+  color: #000000;
+}
+
+.imageCredits a {
+  text-decoration: underline;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.imageCredits:hover a {
+  color: #818181;
+}

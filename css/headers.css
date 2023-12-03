@@ -32,7 +32,7 @@
   transition: all 0.4s;
 }
 .sshSearch form:hover {
-  box-shadow: 0 0 5px -2px #000000;
+  box-shadow: 0 0 5px -2px #cf90f9;
 }
 
 .sshSearch button {
@@ -68,7 +68,7 @@
 .sshEaU:after {
   content: "";
   width: 1px;
-  height: 40px;
+  height: 30px;
   background-color: #b3b3b3;
   position: absolute;
   right: -27px;
@@ -297,16 +297,16 @@
 .sshCpartOne {
   display: flex;
   gap: 20px;
-      align-items: center;
-    justify-content: center;
-    grid-column: 1/2;
-    margin-right:15px ;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  margin-right: 15px;
 }
 .sshCpartOne div a {
   font-size: 14px;
   font-weight: 500;
   color: #818181;
-  transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .sshCpartOne div a:hover {
   color: #000000;
@@ -316,13 +316,15 @@
   width: 100%;
   grid-column: 2/-1;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 0);
-    color:#cf90f9;
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 0);
+  color: #cf90f9;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset,0);
-    color:#cf90f9;
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 0);
+  color: #cf90f9;
 }
 
 .sshCpartTwo {
@@ -334,13 +336,13 @@
   width: -moz-fit-content !important;
   width: fit-content !important;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   font-size: 14px;
   font-weight: 500;
   color: #818181;
-    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
-    cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
 }
 .sshCategory ul li:hover {
   color: #000000;
