@@ -1,0 +1,84 @@
+footer {
+  display: grid;
+  grid-template-columns: 95%;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 100px;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.footerSnapSyncBox {
+  grid-column: span 6;
+}
+.footerProductBox {
+  grid-column: span 2;
+}
+.footerPopularBox {
+  grid-column: span 2;
+}
+.footerWallpapersBox {
+  grid-column: span 2;
+}
+
+.footerBox:first-child p {
+  margin-bottom: 20px;
+}
+.footerBox h5 {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+.footerBox ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footerBox ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footerBox ul li a {
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.5s;
+}
+.footerBox ul li:hover a {
+  color: #000000;
+}
+.footerBar {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #81818142;
+}
+.footerBar .pages ul {
+  display: flex;
+  gap: 20px;
+}
+.footerBar .pages ul li a {
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.footerBar .pages ul li:hover a {
+  color: #000000;
+}
+
+.footerBar .social ul {
+  display: flex;
+  gap: 20px;
+}
+.footerBar .social ul li img {
+  width: 25px;
+  cursor: pointer;
+  transition: all 0.5 cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.footerBar .social ul li:hover img {
+  transform: scale(1.2);
+}
