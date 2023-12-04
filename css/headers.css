@@ -325,20 +325,25 @@
   position: absolute;
   right: -15px;
 }
-.sshCpartOne div {
+.sshCpartOne .clickable {
   display: flex;
   height: 50px;
   align-items: center;
   justify-content: center;
-}
-
-.sshCpartOne div a {
   font-size: 14px;
   font-weight: 500;
   color: #818181;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
 }
-.sshCpartOne div a:hover {
+
+/* when user navigating between category then add this class clickAbleNext at clickable and remove  */
+.clickAbleNext {
+  border-bottom: 2px solid #000000;
+  color: #000000 !important;
+}
+
+.sshCpartOne div:hover {
   color: #000000;
 }
 
