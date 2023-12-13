@@ -7,30 +7,37 @@
   flex-direction: column;
   gap: 50px;
   height: 100vh;
+  width: 550px;
   background-image: url(../images/rgesiterImage/registerPageLeftImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  -webkit-filter: brightness(0.4);
-  filter: brightness(0.5);
+  padding: 35px;
   grid-column: 1 / 6;
-  padding: 50px;
+  position: fixed;
 }
 .leftSide img {
   width: 80px;
 }
 .leftSide article {
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 170px;
 }
 .leftSide article h1 {
-  font-size: 34px;
+  font-size: 42px;
+  line-height: 39px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 .leftSide article p {
-  font-size: 20px;
+  font-size: 23px;
+  line-height: 27px;
   color: #ffffff;
+  letter-spacing: 0.5px;
   font-weight: 500;
 }
 
@@ -38,7 +45,7 @@
   color: #ffffff;
 }
 .credits a {
-  color: #ffffff;
+  color: #cf90f9;
   text-decoration: underline;
 }
 
@@ -46,6 +53,166 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   justify-content: center;
   grid-column: 6 / -1;
+  padding: 70px 0 40px 0;
+}
+.rightSide .div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.rightSide .div1 h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+.rightSide .div1 span {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #000000;
+}
+.rightSide .div1 span a {
+  color: #cf90f9;
+  text-decoration: underline;
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 60%;
+  background: rgb(207, 144, 249);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf90f9",endColorstr="#8ecbfc",GradientType=1);
+  box-shadow: 0 0 12px -6px #cf90f9;
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.div2 img {
+  width: 20px;
+  height: 20px;
+}
+.div2 span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.div2:hover {
+  box-shadow: 0 0 10px -5px #000000;
+}
+.div2:hover span {
+  color: #ffffff;
+}
+
+.rightSide .or {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.rightSide form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.rightSide form div label {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #818181;
+  margin-bottom: 10px;
+}
+.rightSide form div input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  font-size: 15px;
+  color: #cf90f9;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -5px #cf90f9;
+}
+.rightSide form .firstAndLastName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSide form div input::placeholder {
+  font-size: 16px;
+  color: #cf90f9;
+}
+.rightSide form div input:focus {
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.rightSide form button {
+  background: rgb(207, 144, 249);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 144, 249, 1) 35%,
+    rgba(142, 203, 252, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf90f9",endColorstr="#8ecbfc",GradientType=1);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.rightSide form button:hover {
+  color: #ffffff;
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.agreement span {
+  color: #818181;
+  font-size: 14px;
+  font-weight: 500;
+}
+.agreement span a {
+  text-decoration: underline;
+  color: #cf90f9;
 }
