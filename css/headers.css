@@ -30,6 +30,7 @@
   padding: 10px 0;
   width: 70px;
   height: 70px;
+  object-fit: cover;
 }
 
 .sshSearch {
@@ -299,6 +300,10 @@
   font-weight: 500;
   background-color: #ffffff;
 }
+
+.sshUserActionsMobile {
+  display: none;
+}
 /* Menu CSS Ends Are Here */
 
 /* SSH Category Starts Are Here */
@@ -396,3 +401,135 @@
   color: #000000;
 }
 /* SSH Category Ends Are Here */
+
+/* Header CSS Responsive Design Starts Are Here*/
+@media only screen and (max-width: 599px) {
+  .sshLogo img {
+    width: 40px;
+    height: 50px;
+  }
+  .sshSearch {
+    grid-column: 2 / 12;
+  }
+  .sshSearch form {
+    width: 99%;
+  }
+  .sshSearch button {
+    padding: 3px 0 3px 3px;
+  }
+  .sshSearch button img {
+    width: 18px;
+    height: 18px;
+  }
+  .sshSearch input[type="search"] {
+    font-size: 13px;
+    padding: 3px 5px 3px 1px;
+  }
+  .sshEaU {
+    display: none;
+  }
+  .sshUserActions {
+    display: none;
+  }
+
+  .sshMenuBar button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sshMenu {
+    width: 290px;
+    top: 50px;
+    right: 10px;
+    padding-bottom: 30px;
+  }
+  .sshMenuContainer {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    margin-bottom: 20px;
+  }
+  .sshMenuContainer::before {
+    right: 5px;
+    transform: rotate(315deg);
+  }
+  .sshMenuBoxLogo {
+    margin-bottom: 0;
+  }
+  .sshMenuBoxLinks {
+    display: none;
+  }
+  .sshBottomBar {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 20px;
+  }
+  .sshPages ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .sshLanguages {
+    justify-content: flex-start;
+  }
+
+  .sshUserActionsMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .sshLoginButtonMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .sshLoginButtonMobile button {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #818181;
+    border: 1px solid #818181;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.5 cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  .sshLoginButtonMobile button:hover {
+    color: #000000;
+    border: 1px solid #000000;
+  }
+  .sshLoginButtonMobile a {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #818181;
+    border: 1px solid #818181;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.5 cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  .sshLoginButtonMobile a:hover {
+    color: #000000;
+    border: 1px solid #000000;
+  }
+
+  .signUpMobileLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .signUpMobileLink span {
+    color: #818181;
+  }
+  .signUpMobileLink a {
+    color: #818181;
+    text-decoration: underline;
+    transition: all 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  .signUpMobileLink a:hover {
+    color: #000000;
+    text-decoration: dashed;
+  }
+}
+/* Header CSS Responsive Design Ens Are Here*/
