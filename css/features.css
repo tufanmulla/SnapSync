@@ -120,7 +120,7 @@
 .trendignSearchesBox ul li {
   width: -moz-fit-content;
   width: fit-content;
-  height: fit-content;
+  height: auto;
   border: 1px solid #efefef;
   padding: 5px;
   border-radius: 8px;
@@ -226,6 +226,7 @@
 @media only screen and (max-width: 599px) {
   .searchBox {
     grid-column: 1 / -1;
+    order: 1;
   }
   .searchBox article h1 {
     font-size: 28px;
@@ -236,6 +237,9 @@
   .trendingSearches {
     flex-wrap: wrap;
     gap: 15px;
+  }
+  .trending {
+    flex-wrap: wrap;
   }
   .trending li {
     font-size: 14px;
@@ -271,20 +275,27 @@
 
 /* responsive design min-widht 600px to max-widht 768px starts are here  */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .featuresContainer {
+    grid-gap: 40px 25px;
+  }
   .searchBox {
-    width: 70%;
     grid-column: 1 / -1;
-    justify-self: center;
+    order: 1;
   }
   .searchBox article h1 {
     font-size: 28px;
   }
   .searchBox article p {
+    width: -moz-fit-content;
+    width: fit-content;
     font-size: 14px;
   }
   .trendingSearches {
     flex-wrap: wrap;
     gap: 15px;
+  }
+  .trending {
+    flex-wrap: wrap;
   }
   .trending li {
     font-size: 14px;
@@ -298,9 +309,7 @@
   }
 
   .trendignSearchesBox {
-    width: 70%;
-    grid-column: 1 / -1;
-    justify-self: center;
+    grid-column: 1 / 7;
   }
 
   .trendignSearchesBox ul li a {
@@ -308,9 +317,7 @@
   }
 
   .featureBox {
-    width: 70%;
-    grid-column: 1 / -1;
-    justify-self: center;
+    grid-column: 7 / -1;
   }
 
   .imageCredits {
@@ -321,5 +328,113 @@
   }
 }
 /* responsive design min-widht 600px to max-widht 768px  ends are here  */
+
+/* responsive design min-widht 769px to max-widht 991px starts are here  */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .featuresContainer {
+    grid-gap: 40px 25px;
+  }
+  .searchBox {
+    grid-column: 1 / -1;
+    order: 1;
+  }
+  .searchBox article h1 {
+    font-size: 33px;
+  }
+  .searchBox article p {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 15px;
+  }
+  .trendingSearches {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .trending li {
+    font-size: 15px;
+  }
+  .searchBox .sshSearch button {
+    padding: 10px 0 10px 10px;
+  }
+
+  .searchBox .sshSearch form input {
+    padding: 10px 12px 10px 2px;
+  }
+
+  .trendignSearchesBox {
+    grid-column: 1 / 7;
+  }
+
+  .trendignSearchesBox ul li a {
+    font-size: 14px;
+  }
+
+  .featureBox {
+    grid-column: 7 / -1;
+  }
+
+  .imageCredits {
+    font-size: 13px;
+  }
+  .imageCredits a {
+    font-size: 13px;
+  }
+}
+/* responsive design min-widht 769px to max-widht 991px  ends are here  */
+
+/* responsive design min-widht 992px to max-widht 1250px starts are here  */
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .featuresContainer {
+    grid-gap: 40px 25px;
+  }
+  .searchBox {
+    grid-column: 1 / 6;
+  }
+  .searchBox article h1 {
+    font-size: 33px;
+  }
+  .searchBox article p {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 15px;
+  }
+  .trendingSearches {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .trending {
+    flex-wrap: wrap;
+  }
+  .trending li {
+    font-size: 15px;
+  }
+  .searchBox .sshSearch button {
+    padding: 10px 0 10px 10px;
+  }
+
+  .searchBox .sshSearch form input {
+    padding: 10px 12px 10px 2px;
+  }
+
+  .trendignSearchesBox {
+    grid-column: 6 / 9;
+  }
+
+  .trendignSearchesBox ul li a {
+    font-size: 14px;
+  }
+
+  .featureBox {
+    grid-column: 9 / -1;
+  }
+
+  .imageCredits {
+    font-size: 13px;
+  }
+  .imageCredits a {
+    font-size: 13px;
+  }
+}
+/* responsive design min-widht 992px to max-widht 1250px  ends are here  */
 
 /*  Responsive CSS Ends Are Here*/

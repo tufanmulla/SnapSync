@@ -1,3 +1,9 @@
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -216,3 +222,69 @@
   text-decoration: underline;
   color: #cf90f9;
 }
+
+/* Responsive CSS Ends Are Here */
+/* max-width 599px Starts Are Here */
+@media only screen and (max-width: 599px) {
+  .container {
+    height: 100vh;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftSide {
+    display: none;
+  }
+  .rightSide {
+    grid-column: 1 / -1;
+  }
+  .rightSide .div1 {
+    margin-bottom: 25px;
+  }
+  .rightSide .div1 span {
+    font-size: 12px;
+  }
+  .rightSide .div1 h1 {
+    font-size: 28px;
+  }
+  .div2 {
+    width: 100%;
+  }
+  .rightSide form {
+    width: 100%;
+  }
+}
+/* max-width 599px Starts Are Here */
+
+/* max-width 599px Starts Are Here */
+@media only screen and (min-width: 600px) and (max-width: 1250px) {
+  .container {
+    height: 100vh;
+    grid-template-columns: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftSide {
+    display: none;
+  }
+  .rightSide {
+    grid-column: 1 / -1;
+  }
+  .rightSide .div1 {
+    margin-bottom: 35px;
+  }
+  .rightSide .div1 span {
+    font-size: 14px;
+  }
+  .rightSide .div1 h1 {
+    font-size: 37px;
+  }
+  .div2 {
+    width: 100%;
+  }
+  .rightSide form {
+    width: 100%;
+  }
+}
+/* max-width 599px Starts Are Here */
+/* Responsive CSS Ends Are Here */

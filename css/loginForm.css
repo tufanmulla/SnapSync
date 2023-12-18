@@ -1,6 +1,13 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   display: grid;
   grid-template-columns: 500px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   grid-gap: 25px;
@@ -20,7 +27,7 @@
   font-size: 25px;
 }
 .logo span {
-    color: #818181;
+  color: #818181;
   font-weight: 500;
   font-size: 14px;
 }
@@ -175,3 +182,13 @@
 .notAAccount span a:hover {
   color: #369cf0;
 }
+
+/* Responsive CSS Ends Are Here */
+/* max-width 599px Starts Are Here */
+@media only screen and (max-width: 599px) {
+  .container {
+    grid-template-columns: 90%;
+  }
+}
+/* max-width 599px Starts Are Here */
+/* Responsive CSS Ends Are Here */

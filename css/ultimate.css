@@ -35,3 +35,26 @@
   grid-column: span 4;
   grid-row: span 2;
 }
+
+/* Responsive CSS Starts Are Here */
+
+/* max-width 599px Starts Are Here*/
+@media only screen and (max-width: 599px) {
+  .imageContainer div {
+    grid-column: 1 / -1;
+  }
+}
+/* max-width 599px Ends Are Here*/
+
+/* min-width 600px to  max-width 1250px Starts Are Here*/
+@media only screen and (min-width: 600px) and (max-width: 1250px) {
+  .imageContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .imageContainer div {
+    grid-column: span 2;
+  }
+}
+/* min-width 600px to  max-width 1250px Ends Are Here*/
+
+/* Responsive CSS Ends Are Here */
