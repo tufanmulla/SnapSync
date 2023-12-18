@@ -1021,6 +1021,7 @@
 }
 /* responsive design between min widht 992px to max width 1250px ends are here  */
 
+/* responsive design between min widht 1201px to max width 1350px starts are here  */
 @media only screen and (min-width: 1201px) and (max-width: 1350px) {
   .sshSearch {
     grid-column: 2 / 6;
@@ -1032,5 +1033,6 @@
     grid-column: 9 / 12;
   }
 }
+/* responsive design between min widht 1201px to max width 1350px ends are here  */
 
 /* Header CSS Responsive Design Ens Are Here*/

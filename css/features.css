@@ -89,7 +89,7 @@
   width: 100%;
 }
 .searchBox .sshSearch form input {
-  padding: 10px px 15px 10px 3px;
+  padding: 10px 15px 10px 3px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -142,7 +142,7 @@
 .trendignSearchesBox a {
   color: #000000;
   font-size: 15px;
-  font-weight: 400px;
+  font-weight: 400;
   text-decoration: underline;
   display: flex;
   justify-content: center;
@@ -219,3 +219,107 @@
 .imageCredits:hover a {
   color: #818181;
 }
+
+/*  Responsive CSS Starts Here*/
+
+/* responsive design max-width 599px starts are here  */
+@media only screen and (max-width: 599px) {
+  .searchBox {
+    grid-column: 1 / -1;
+  }
+  .searchBox article h1 {
+    font-size: 28px;
+  }
+  .searchBox article p {
+    font-size: 14px;
+  }
+  .trendingSearches {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .trending li {
+    font-size: 14px;
+  }
+  .searchBox .sshSearch button {
+    padding: 8px 0 8px 8px;
+  }
+
+  .searchBox .sshSearch form input {
+    padding: 8px 10px 8px 1px;
+  }
+
+  .trendignSearchesBox {
+    grid-column: 1 / -1;
+  }
+
+  .trendignSearchesBox ul li a {
+    font-size: 13px;
+  }
+
+  .featureBox {
+    grid-column: 1 / -1;
+  }
+
+  .imageCredits {
+    font-size: 12px;
+  }
+  .imageCredits a {
+    font-size: 12px;
+  }
+}
+/* responsive design max-width 599px ends are here  */
+
+/* responsive design min-widht 600px to max-widht 768px starts are here  */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .searchBox {
+    width: 70%;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .searchBox article h1 {
+    font-size: 28px;
+  }
+  .searchBox article p {
+    font-size: 14px;
+  }
+  .trendingSearches {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .trending li {
+    font-size: 14px;
+  }
+  .searchBox .sshSearch button {
+    padding: 8px 0 8px 8px;
+  }
+
+  .searchBox .sshSearch form input {
+    padding: 8px 10px 8px 1px;
+  }
+
+  .trendignSearchesBox {
+    width: 70%;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .trendignSearchesBox ul li a {
+    font-size: 13px;
+  }
+
+  .featureBox {
+    width: 70%;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .imageCredits {
+    font-size: 12px;
+  }
+  .imageCredits a {
+    font-size: 12px;
+  }
+}
+/* responsive design min-widht 600px to max-widht 768px  ends are here  */
+
+/*  Responsive CSS Ends Are Here*/
