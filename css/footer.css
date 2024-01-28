@@ -83,6 +83,27 @@ footer {
   transform: scale(1.2);
 }
 
+.copyright {
+  text-align: center;
+  line-height: 25px;
+}
+
+.copyright span {
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+.copyright span a {
+  color: #797979;
+}
+.copyright:hover a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.copyright:hover span {
+  color: #000000;
+}
 /* Responsive CSS starts are here */
 /* max-width 599px Starts are here  */
 @media only screen and (max-width: 599px) {
@@ -106,7 +127,13 @@ footer {
     grid-template-columns: repeat(12, 1fr);
   }
   .footerBox {
-    grid-column: span 6;
+    grid-column: span 4;
+  }
+  .footerBar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
   }
 }
 /* min-width 600px to max-width 991px ends are here*/
